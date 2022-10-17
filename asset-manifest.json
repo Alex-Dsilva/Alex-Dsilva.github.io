@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Alexfp05405.github.io.git/static/css/main.073c9b0a.css",
+    "main.js": "/Alexfp05405.github.io.git/static/js/main.2663f0f4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Alexfp05405.github.io.git/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo.svg": "/Alexfp05405.github.io.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Alexfp05405.github.io.git/index.html",
+    "main.073c9b0a.css.map": "/Alexfp05405.github.io.git/static/css/main.073c9b0a.css.map",
+    "main.2663f0f4.js.map": "/Alexfp05405.github.io.git/static/js/main.2663f0f4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Alexfp05405.github.io.git/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2663f0f4.js"
+  ]
+}
