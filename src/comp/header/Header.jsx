@@ -13,7 +13,7 @@ const Header = () => {
             <Link to="/About" className="nav__logo">
                 <div className="typed-out"><img src={Logo} className="slide" alt={"logo"}/></div>
             </Link>
-
+            <i class="uil uil-times"></i>
             <Navlinks/>
             
         </nav>
