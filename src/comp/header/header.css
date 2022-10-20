@@ -1,0 +1,84 @@
+/* @import url('http://fonts.cdnfonts.com/css/anonymous-pro');
+
+
+  .Logo_container{
+    display: flex;
+    width:155px;
+    align-items: flex-end;
+  }
+  .typed-out{
+    overflow: hidden;
+    /* border-right: .15em solid orange; */
+   /* white-space: nowrap;
+    animation: typing 5s steps(10, end) forwards infinite;
+    transition-timing-function: ease-in-out;
+    font-size: 1.6rem;
+    font-family: 'Anonymous Pro', sans-serif;
+    width: 0;
+  }
+
+  .curser{
+    height: 5px;
+    width: 15px;
+    background-color: aqua;
+    margin-bottom: 4px;
+    animation: blinking .8s infinite;
+  }
+
+  .typed-out::after {
+    animation:delayed 5s;
+  }
+  .typed-out::after {
+    animation:delayed 5s ;
+  }
+
+  @keyframes typing {
+    /* from { width: 0% }
+    to { width: 100% } */
+   /* 50%, 100% {
+        width: 100% 
+      }
+      0% {
+        width: 0% 
+      }
+      22% {
+        width: 100%
+      }
+   
+  }
+  @keyframes blinking {
+    from { background-color: transparent }
+    to { background-color: aqua }
+  }
+
+  @keyframes delayed {
+    from{ with:50%}
+    to{ with:100%}
+  } */
+
+
+  .typed-out {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 35px; 
+    padding: 5px;
+}
+
+.slide {
+    position: absolute;
+    left: -100px;
+    -webkit-animation: slide 0.8s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.8s forwards;
+    transition-timing-function: ease-in;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
