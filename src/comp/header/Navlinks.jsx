@@ -1,29 +1,51 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import CV from "../../assets/Alex_Dislva.pdf"
+import {VscFilePdf} from "react-icons/vsc"
+import "./Navlinks.css"
 
-const Navlinks = () => {
+const Navlinks = ({toggle, onClick}) => {
   return (
-    <div className="nav__menu">
+    <div className={toggle? "nav__menu show-menu":"nav__menu"}>
         <ul className="nav__list grid">
              <li className="nav__item">
-              <i class="uil uil-estate"></i><Link to="/">Home</Link>
+                <Link to="/" className="nav__link" onClick={onClick} >
+                  <i className="uil uil-estate nav__icon"></i>Home
+                </Link>
              </li>
              <li className="nav__item">
-              <i class="uil uil-user"></i><Link to="/About">About</Link>
+                <Link to="/About" className="nav__link" onClick={onClick} >
+                  <i className="uil uil-user nav__icon"></i>About
+                </Link>
              </li>
              <li className="nav__item">
-              <i class="uil uil-file-alt"></i><Link to="/Skills">Skills</Link>
+                <Link to="/Skills" className="nav__link" onClick={onClick} >
+                 <i className="uil uil-file-alt nav__icon"></i>Skills
+                </Link>
              </li>
-             <li className="nav__item">
-              <i class="uil uil-scenery"></i><Link to="/Projects">Projects</Link>
+             <li className="nav__item bot">
+                <Link to="/Projects" className="nav__link" onClick={onClick} >
+                 <i className="uil uil-scenery nav__icon"></i>Projects
+                </Link>
              </li>
-             <li className="nav__item">
-              <i class="uil uil-message"></i><Link to="/Contact">Contact</Link>
+             <li className="nav__item bot">
+                <Link to="/Contact" className="nav__link" onClick={onClick} >
+                  <i className="uil uil-message nav__icon"></i>Contact
+                </Link>
              </li>
+             <li className="nav__item bot">
+             <a download="" href={CV} className="nav__link">
+             <i className="uil nav__icon"><VscFilePdf/></i>
+             
+              Resume
+            </a>
+             </li>
+
         </ul>
-        <i class="uil uil-times"></i>
+        <i className="uil uil-times nav__close" onClick={onClick}></i>
     </div>
   )
 }
+
 
 export default Navlinks
