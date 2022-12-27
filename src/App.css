@@ -31,9 +31,9 @@
   --tiny-font-size: 0.625rem;
 
   /*========== Font weight ==========*/
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
+  --font-normal: 500;
+  --font-medium: 600;
+  --font-semi-bold: 700;
 
   /*========== Margenes Bottom ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -90,15 +90,15 @@ body {
 
 h1,h2,h3 {
   color: var(--title-color);
-  font-weight: var(--font-semi-bold);
 }
 
 ul {
   list-style: none;
 }
 
-a {
+.nav__link {
   text-decoration: none;
+  color:#000;
 }
 
 button {
@@ -114,17 +114,19 @@ img {
 
 
 .section {
-  padding:6rem 0 2rem;
+  /* display:flex; */
+  padding:5rem 0 2rem;
+  /* overflow: hidden; */
 }
 
 .section__title {
-  font-size: var(--small-font-size);
+  font-size: var(--h1-font-size);
   color:var(--title-color);
 }
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: 4rem;
 }
 
@@ -134,7 +136,7 @@ img {
 }
 
 .container {
-  max-width: 95%;
+  max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -144,27 +146,89 @@ img {
   gap:1.5rem;
 }
 
+a {
+  text-decoration: none;
+}
 
 
 .button {
   display:inline-block;
+  background-color:var(--title-color);
+  color:var(--container-color);
+  padding:1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium) ;
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display:inline-flex;
   align-items: center;
 }
 
 /*=============== Breakpoints ===========*/
-
 /* Large device */
 @media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 /* Medium device */
 @media screen and (max-width: 768px) {
+  body {
+    padding-top:0px;
+    margin: 0 0 var(--header-height) 0;
+  }
+
+
+  .section {
+    padding: 1rem 0 2rem;
+  }
 }
 
 /* Semi Medium device */
 @media screen and (max-width: 576px) {
+  body {
+    padding-top:0px;
+  }
+
 }
 
 /* Small device */
 @media screen and (max-width: 350px){
+    .container {
+      margin-left: var(--mb-1-5);
+      margin-right: var(--mb-1-5);
+    }
+    body {
+      padding-top:0px;
+    }
+}
+
+#text_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 10px;
+}
+
+.center_all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
 }

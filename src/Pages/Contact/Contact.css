@@ -1,0 +1,13 @@
+.subTitle{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.section__subtitle{
+    font-weight: 600;
+}
+
+.info p{
+    font-size: medium;
+    font-weight: 500;
+}
