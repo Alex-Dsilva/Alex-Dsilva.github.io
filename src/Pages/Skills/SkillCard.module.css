@@ -18,6 +18,17 @@
     margin-bottom: var(--mb-1-5);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    margin: 20px auto;
+    padding-top: 20px;
+    cursor: pointer;
+  }
+
 .skills__box {
     display: flex;
     justify-content: center;
