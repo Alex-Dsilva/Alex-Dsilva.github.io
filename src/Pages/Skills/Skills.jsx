@@ -12,15 +12,14 @@ import { SiNpm } from "react-icons/si"
 import { SiPostman } from "react-icons/si"
 import { SiExpress } from "react-icons/si"
 import { FaGitAlt } from "react-icons/fa"
-// import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade"
 
 const Skills = () => {
   return (
   <div className={styles.rootCont} id="skills">
-  {/* <Fade bottom> */}
+  <Fade bottom>
 
-    <p className={styles.skill}
-     color="rgb(17, 121, 224)">Skills</p>
+    <p className={styles.skill}>Skills</p>
     <p>Front-end skills</p>
     <div className={styles.skillsContFront}>
 
@@ -114,7 +113,7 @@ const Skills = () => {
         <SkillCard
         skill="Github"
         icon={
-          <SiGithub className={`${styles.skillIcon} ${styles.gitIcon}`} />
+          <SiGithub className={`${styles.skillIcon} ${styles.githubIcon}`} />
         }
       />
       <SkillCard
@@ -124,19 +123,19 @@ const Skills = () => {
       <SkillCard
         skill="Postman"
         icon={
-          <SiPostman className={`${styles.skillIcon} ${styles.gitIcon}`} />
+          <SiPostman className={`${styles.skillIcon} ${styles.postman}`} />
         }
       />
        <SkillCard
         skill="Heroku"
         icon={
-          <SiHeroku className={`${styles.skillIcon} ${styles.gitIcon}`} />
+          <SiHeroku className={`${styles.skillIcon} ${styles.heroku}`} />
         }
       />
        <SkillCard
         skill="Netlify"
         icon={
-          <SiNetlify className={`${styles.skillIcon} ${styles.gitIcon}`} />
+          <SiNetlify className={`${styles.skillIcon} ${styles.netlyfy}`} />
         }
       />
             <SkillCard
@@ -148,12 +147,12 @@ const Skills = () => {
             <SkillCard
         skill="Vercel"
         icon={
-          <SiVercel className={`${styles.skillIcon} ${styles.gitIcon}`} />
+          <SiVercel className={`${styles.skillIcon} ${styles.githubIcon}`} />
         }
       />
    
     </div>
-  {/* </Fade> */}
+  </Fade>
 </div>)
 }
 
