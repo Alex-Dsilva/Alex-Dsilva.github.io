@@ -9,6 +9,9 @@ const Social = () => {
       <a href="https://www.linkedin.com/in/alex-dislva/" className="home__social-icon" target="_blank">
         <i class="uil uil-linkedin"></i>
       </a>
+      <a href="https://www.linkedin.com/in/alex-dislva/" className="home__social-icon" target="_blank">
+      <i class="uil uil-envelope"></i>
+      </a>
     </div>
   )
 }

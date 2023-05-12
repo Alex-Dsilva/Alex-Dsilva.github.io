@@ -34,9 +34,7 @@ a {
   justify-content: center;
 }
 
-.grid{
-  grid-template-columns: repeat(2,1fr);
-}
+
 /*project card*/
 .projectCont {
   margin-top: 30px;

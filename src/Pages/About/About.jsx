@@ -26,6 +26,19 @@ const About = () => {
     });
   };
 
+  const handleClick = async () => {
+    try {
+      const a = document.createElement('a');
+      a.href = "https://drive.google.com/file/d/190JV9TFt09qJypb655fK646GzR-4PIQI/view";
+      // a.download = 'Alex_Resume.pdf';
+      a.target="_blank"
+      a.click();
+
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div id="About">
       <section className="about section" id="about">
@@ -64,7 +77,7 @@ const About = () => {
             <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alexfp05405&theme=react-dark&custom_title=alexfp05405%20's%20contribution%20Graph&hide_border=true" />
             <br/>
 
-            <a download="" href={CV} className="button button--flex">
+            <a download="Alex_Dislva_Resume.pdf" href={CV} onClick={handleClick} className="button button--flex">
               Download Resume
               <svg
                 class="button__icon"

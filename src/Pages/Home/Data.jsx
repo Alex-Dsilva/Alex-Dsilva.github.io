@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from "react-scroll";
 
 const Data = () => {
   return (
@@ -12,7 +12,11 @@ const Data = () => {
       <h2 className="home__subtitle">Full Stack Web Developer</h2>
       <p className="home__description">I'm a Full Stack Web Developer based in India, and I'm very passionate and dedicated to my work.</p>
     
-      <Link to="/Contact" className="button button--flex">
+      <Link to="Contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={600} className="button button--flex">
         Let's Connect 
         <svg
                   className="button__icon"

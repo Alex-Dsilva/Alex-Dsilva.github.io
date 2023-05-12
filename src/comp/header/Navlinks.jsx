@@ -9,7 +9,7 @@ const Navlinks = ({toggle, onClick}) => {
   const handleClick = async () => {
     try {
       const a = document.createElement('a');
-      a.href = "https://drive.google.com/file/d/1nbCr0hdnBhnV73MI3uxRCpw1yq-uBtfE/view";
+      a.href = "https://drive.google.com/file/d/190JV9TFt09qJypb655fK646GzR-4PIQI/view";
       // a.download = 'Alex_Resume.pdf';
       a.target="_blank"
       a.click();
@@ -80,7 +80,7 @@ const Navlinks = ({toggle, onClick}) => {
                 </Link>
              </li>
              <li className="nav__item bot">
-             <a download="Alex_Resume.pdf" href={CV} onClick={handleClick} className="nav__link">
+             <a download="Alex_Dislva_Resume.pdf" href={CV} onClick={handleClick} className="nav__link">
              <i className="uil nav__icon"><VscFilePdf/></i>
              
               Resume
