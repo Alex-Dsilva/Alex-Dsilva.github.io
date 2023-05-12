@@ -2,7 +2,7 @@
     /* height: 90vh; */
     width: 70%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,10 +27,9 @@
     /* margin: 10; */
   }
   .rootCont > p:nth-of-type(1) {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color:  rgb(0, 0, 0);
-    text-decoration: underline;
     text-decoration-color: rgb(12, 12, 12);
     /* margin: 50px; */
   }
@@ -105,8 +104,21 @@
     color: rgb(82, 167, 75);
   }
   .gitIcon:hover {
-    color: blue;
+    color: rgb(187, 22, 22);
   }
+  .githubIcon:hover {
+    color: rgb(38, 30, 76);
+  }
+  .postman:hover{
+    color: #f76935;
+  }
+  .heroku:hover{
+    color:#550abf;
+  }
+  .netlyfy:hover{
+    color: #1ac0af;
+  }
+
   .expIcon {
     margin: 0;
   }

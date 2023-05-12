@@ -15,7 +15,7 @@ const ContactSection = () => {
             <div className="contactSection__wrapper">
                 <div className="left">
                     <h1 className="subTitle">Feel Free to Contact via...</h1>
-                    <ContectInfoitem onClick={()=> window.open('tel:+919909553880')} Icon={<MdLocalPhone/>} text="Call me on +91 99095-53880"/>
+                    <ContectInfoitem onClick={()=> window.open('tel:+919909553880')} Icon={<MdLocalPhone/>} text="Call me at +91 99095-53880"/>
                     <ContectInfoitem onClick={()=> window.open("mailto:alexdislva79@gmail.com")} Icon={<MdMail/>} text="Mail me on alexdislva79@gmail.com" />
                     <ContectInfoitem onClick={()=> window.open('https://www.linkedin.com/in/alex-dislva', '_blank')} Icon={<AiFillLinkedin/>} text="Let's Connect on Linkedin"/>
                 </div>
@@ -69,9 +69,6 @@ const ContactSectionStyle =styled.div`
                 font-size: small;
             }
             
-        }
-        .Right{
-            padding: 4rem 2rem 2rem 2rem;
         }
     }
 `

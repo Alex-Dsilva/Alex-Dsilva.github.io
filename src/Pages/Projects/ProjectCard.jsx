@@ -1,5 +1,5 @@
 import styles from "./ProjectsSection.module.css"
-import {GrDeploy} from "react-icons/gr"
+import {CgWebsite} from "react-icons/cg"
 import {BsGithub} from "react-icons/bs"
 export function ProjectCard({ name, img, git, link, stacks, about }) {
   return (
@@ -18,11 +18,9 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
               <p>Code</p>
             </div>
           </a>
-          <div className={styles.stacksDiv}>{stacks.map((stack) => stack)}</div>
-
           <a href={link} rel="noreferrer" target="_blank">
             <div className={styles.linkDiv}>
-              <GrDeploy/>
+              <CgWebsite/>
               <p>Demo</p>
             </div>
           </a>
@@ -31,6 +29,8 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
         <div className={styles.projInfo}>
             <p>{about}</p>
         </div>
+
+        <div className={styles.stacksDiv}>{stacks.map((stack) => stack)}</div>
       </div>
     </>
   )
