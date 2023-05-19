@@ -31,6 +31,8 @@ const ContactSection = () => {
 
 const ContactSectionStyle =styled.div`
     padding:5rem 0;
+    width:90%;
+    margin:auto;
     .contactSection__wrapper{
         display: flex;
         gap: 5rem;
