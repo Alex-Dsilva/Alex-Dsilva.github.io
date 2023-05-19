@@ -153,10 +153,13 @@
 }
 
 .header {
-  width:100%;
+  width:90%;
   position:fixed;
   top:0;
   left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   z-index:var(--z-fixed) ;
   background-color:var(--container-color);
 }

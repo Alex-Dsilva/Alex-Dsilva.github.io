@@ -61,7 +61,6 @@ const About = () => {
             <span className="section__subtitle subtitle"><AiFillGithub/>Github Details</span>
             <div id='gitcalender'>
                 <GitHubCalendar style={{margin:'auto'}} username="alexfp05405" 
-                    transformData={selectLastHalfYear} 
                     className="giton"></GitHubCalendar>
             </div>
 
@@ -72,9 +71,9 @@ const About = () => {
               </tr>
             </table>
             <br/>
-            <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alexfp05405&theme=2077" width="100%" />
+            <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alexfp05405&theme=2077" style={{width:"80%"}} />
             <br/>
-            <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alexfp05405&theme=react-dark&custom_title=alexfp05405%20's%20contribution%20Graph&hide_border=true" />
+            <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alexfp05405&theme=react-dark&custom_title=alexfp05405%20's%20contribution%20Graph&hide_border=true" style={{width:"80%"}}  />
             <br/>
 
             <a download="Alex_Dislva_Resume.pdf" href={CV} onClick={handleClick} className="button button--flex">

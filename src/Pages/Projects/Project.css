@@ -1,4 +1,23 @@
 
-.project__content{
-    grid-template-columns: repeat(2,1fr);
+
+  /* CSS for responsiveness */
+.project {
+  padding: 80px 0;
+}
+
+.project__content {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .project__content {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
+}
+
+@media (max-width: 512px) {
+  .project__container {
+    grid-template-columns: 1fr;
+  }
+}

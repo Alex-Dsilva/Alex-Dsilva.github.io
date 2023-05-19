@@ -136,7 +136,7 @@ img {
 }
 
 .container {
-  max-width: 968px;
+  /* max-width: 968px; */
   margin-left: auto;
   margin-right: auto;
 }
