@@ -16,7 +16,7 @@ function App() {
       {/* <AllRoutes/>  */}
       <Home/>
       <About/>
-      {/* <Projects/> */}
+      <Projects/>
       {/* <Skills/> */}
       <Contact/>
     </div>
