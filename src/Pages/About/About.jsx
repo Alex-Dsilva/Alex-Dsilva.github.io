@@ -3,7 +3,7 @@ import Info from "./Info"
 import "./about.css";
 import {AiFillGithub} from 'react-icons/ai'
 import Aboutimg from "../../assets/Alex.jpg";
-import GitHubCalendar from 'react-github-calendar';
+// import GitHubCalendar from 'react-github-calendar';
 import CV from "../../assets/Alex_Dislva.pdf";
 
 
@@ -53,18 +53,18 @@ const About = () => {
           <span className="section__subtitle subtitle">My Introduction</span>
 
             <p className="about__description">
-              I am a innovative optimized solution seeker. Excited to be inthe deployment phase of my new career as a full stack web developer An avid coder and a great team player.
+              I am a innovative optimized solution seeker. Excited to be in the deployment phase of my new career as a full stack web developer An avid coder and a great team player.
             </p>
 
             <Info/>
 
-            <span className="section__subtitle subtitle"><AiFillGithub/>Github Details</span>
+            {/* <span className="section__subtitle subtitle"><AiFillGithub/>Github Details</span>
             <div id='gitcalender'>
                 <GitHubCalendar style={{margin:'auto'}} username="alexfp05405" 
                     className="giton"></GitHubCalendar>
-            </div>
+            </div> */}
 
-            <table>
+            {/* <table>
               <tr>
                 <td valign="top"><img align="center" src="https://github-readme-stats.vercel.app/api?username=alexfp05405&show_icons=true&locale=en&theme=algolia&count_private=true" alt="alexfp05405" /></td>
                 <td valign="top"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=alexfp05405&show_icons=true&locale=en&theme=algolia&count_private=true" alt="alexfp05405" /></td>
@@ -74,7 +74,7 @@ const About = () => {
             <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alexfp05405&theme=2077" style={{width:"80%"}} />
             <br/>
             <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alexfp05405&theme=react-dark&custom_title=alexfp05405%20's%20contribution%20Graph&hide_border=true" style={{width:"80%"}}  />
-            <br/>
+            <br/> */}
 
             <a download="Alex_Dislva_Resume.pdf" href={CV} onClick={handleClick} className="button button--flex">
               Download Resume

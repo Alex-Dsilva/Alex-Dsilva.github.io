@@ -1,6 +1,6 @@
 import React from 'react'
 import "./git.css"
-import GitHubCalendar from 'react-github-calendar';
+// import GitHubCalendar from 'react-github-calendar';
 import {Tooltip as ReactTooltip } from 'react-tooltip';
 import Stats from './Stats';
 
@@ -25,22 +25,22 @@ const Git = () => {
 
   return (
     
-    <section className="git container section" id='gitbox'>
- <h1 className="section__title grid">Git Hub</h1>
-      <div id='gitcalender'>
-      <GitHubCalendar 
-      style={{margin:'auto'}}
-      username="alexfp05405"
-      // transformData={selectLastHalfYear}
+//     <section className="git container section" id='gitbox'>
+//  <h1 className="section__title grid">Git Hub</h1>
+//       <div id='gitcalender'>
+//       <GitHubCalendar 
+//       style={{margin:'auto'}}
+//       username="alexfp05405"
+//       // transformData={selectLastHalfYear}
       
-      className="giton"
+//       className="giton"
      
-      >
-        {/* <ReactTooltip delayShow={20}/> */}
-      </GitHubCalendar>
-      </div>
+//       >
+//         {/* <ReactTooltip delayShow={20}/> */}
+//       </GitHubCalendar>
+//       </div>
       
-    </section>
+//     </section>
      
     
   
